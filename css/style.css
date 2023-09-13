@@ -1,0 +1,194 @@
+@font-face {
+  font-family: "Onest-Thin";
+  font-weight: 200;
+  font-style: normal;
+  src: url("../fonts/Onest-Thin.woff") format("woff"), url("../fonts/Onest-Thin.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Onest-Light";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/Onest-Light.woff") format("woff"), url("../fonts/Onest-Light.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Onest-Regular";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Onest-Regular.woff") format("woff"), url("../fonts/Onest-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Onest-Medium";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/Onest-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Onest-Bold";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/Onest-Bold.woff") format("woff"), url("../fonts/Onest-Bold.woff2") format("woff2");
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  color: #fff;
+  font-family: "Onest-Regular";
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+.container {
+  max-width: 1730px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 50px;
+  font-family: "Onest-Bold";
+  margin-bottom: 40px;
+}
+
+.top {
+  background-image: url(../images/top-bg.png);
+  min-height: 100vh;
+  background-size: cover;
+  padding-top: 50px;
+}
+.top__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.top__descr {
+  width: 65%;
+  margin-right: 45px;
+}
+.top__title {
+  font-size: 60px;
+  font-family: "Onest-Bold";
+  margin-bottom: 40px;
+  max-width: 770px;
+}
+.top__p {
+  font-size: 30px;
+  font-family: "Onest-Light";
+}
+.top__form {
+  width: 35%;
+}
+.top__form-input {
+  min-width: 100%;
+}
+
+.header {
+  font-size: 20px;
+  margin-bottom: 155px;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__menu-li {
+  display: inline-block;
+  margin-right: 50px;
+}
+.header__menu-li:last-child {
+  margin-right: 0;
+}
+.header__contacts {
+  max-width: 316px;
+}
+.header__contacts-link {
+  margin-bottom: 10px;
+}
+.header__contacts-link._phone, .header__contacts-link._mail, .header__contacts-p._place {
+  position: relative;
+  padding-left: 35px;
+}
+.header__contacts-link._phone::before, .header__contacts-link._mail::before, .header__contacts-p._place::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+}
+.header__contacts-link._phone::before {
+  background-image: url(../images/phone.svg);
+}
+.header__contacts-link._mail::before {
+  background-image: url(../images/mail.svg);
+}
+.header__contacts-p._place::before {
+  background-image: url(../images/place.png);
+}
+
+.about {
+  background: #252525;
+  padding: 70px 0 100px;
+  font-size: 26px;
+  font-family: "Onest-Regular";
+}
+.about__p {
+  margin-bottom: 50px;
+}
+.about__descr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about__descr-p {
+  position: relative;
+  padding-left: 55px;
+  margin-bottom: 15px;
+}
+.about__descr-p:last-child {
+  margin-bottom: 0;
+}
+.about__descr-p::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-image: url(../images/list-check.svg);
+}
+
+.products {
+  padding: 70px 0 60px;
+  background-image: url(../images/production-bg.png);
+  min-height: 775px;
+}
+
+.production {
+  background: #252525;
+  padding: 100px 0;
+}
