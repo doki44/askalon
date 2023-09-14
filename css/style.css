@@ -88,7 +88,6 @@ a {
 }
 .top__descr {
   width: 65%;
-  margin-right: 45px;
 }
 .top__title {
   font-size: 60px;
@@ -103,8 +102,101 @@ a {
 .top__form {
   width: 35%;
 }
+.top__form-item {
+  margin-bottom: 20px;
+  position: relative;
+}
 .top__form-input {
   min-width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  height: 40px;
+  outline: none;
+  color: #fff;
+  font-family: inherit;
+  font-size: 24px;
+}
+.top__form-input::-moz-placeholder {
+  font-size: 24px;
+  font-family: "Onest-Thin";
+  color: rgba(255, 255, 255, 0.5);
+}
+.top__form-input:-ms-input-placeholder {
+  font-size: 24px;
+  font-family: "Onest-Thin";
+  color: rgba(255, 255, 255, 0.5);
+}
+.top__form-input::placeholder {
+  font-size: 24px;
+  font-family: "Onest-Thin";
+  color: rgba(255, 255, 255, 0.5);
+}
+.top__form-file {
+  font-size: 20px;
+  font-family: "Onest-Thin";
+  margin-bottom: 20px;
+}
+.top__form-check {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: absolute;
+}
+.top__form-check:checked + .top__form-check-label::after {
+  opacity: 1;
+}
+.top__form-check-label {
+  cursor: pointer;
+  font-family: "Onest-Thin";
+  font-size: 19px;
+  padding-left: 50px;
+}
+.top__form-check-label::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.top__form-check-label::after {
+  content: "";
+  display: block;
+  width: 17px;
+  height: 13px;
+  background: url(../images/check.svg) no-repeat;
+  background-size: 17px 13px;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  z-index: 2;
+  opacity: 0;
+}
+.top__form-btn {
+  cursor: pointer;
+  background: transparent;
+  font-size: 22px;
+  font-family: "Onest-Light";
+  color: #fff;
+  padding: 8px 24px;
+  border-radius: 40px;
+  border: 1px solid #FFF;
+  outline: none;
+}
+
+input #file-upload-button {
+  background: transparent;
+  color: #fff;
+  padding: 8px 24px;
+  border-radius: 40px;
+  border: 1px solid #FFF;
+  font-size: 22px;
+  font-family: "Onest-Thin";
 }
 
 .header {
@@ -350,4 +442,10 @@ a {
 }
 .footer__copy-descr {
   border-bottom: 1px solid #fff;
+}
+
+.top-btn {
+  position: fixed;
+  right: 50px;
+  bottom: 140px;
 }

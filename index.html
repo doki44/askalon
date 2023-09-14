@@ -12,7 +12,7 @@
 
 <body>
     <div class="wrapper">
-        <section class="top">
+        <section class="top" id="top">
             <div class="container">
                 <header class="header">
                     <div class="header__inner">
@@ -77,11 +77,11 @@
                             <input class="top__form-input" type="text" placeholder="Телефон для связи">
                         </div>
                         <div class="top__form-item">
-                            <input class="top__form-input" type="file">
+                            <input class="top__form-file" type="file">
                         </div>
-                        <div class="top__form-item">
+                        <div class="top__form-item" style="display: flex; align-items: center;">
                             <input class="top__form-check" type="checkbox" name="check" id="check">
-                            <label for="check">Я даю согласие на обработку моих персональных данных</label>
+                            <label class="top__form-check-label" for="check">Я даю согласие на обработку моих персональных данных</label>
                         </div>
                         <div class="top__form-item">
                             <button class="top__form-btn">Отправить заявку</button>
@@ -334,11 +334,14 @@
                     </div>
                     <div class="footer__copy">
                         <p class="footer__copy-descr">© 2023 «АСКАЛОН»</p>
-                        <a href="" class="footer__copy-descr">Разработка сайта — Cайт НН</a>
+                        <a href="#" class="footer__copy-descr">Разработка сайта — Cайт НН</a>
                     </div>
                 </div>
             </div>
         </footer>
+        <a href="#top" class="top-btn">
+            <img src="images/top-btn.svg" alt="top">
+        </a>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
