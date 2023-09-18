@@ -19,6 +19,7 @@ body{
     color: #fff;
     font-family: "Onest-Regular";
     background: #252525;
+    // overflow-x: hidden;
 }
 
 ul{
@@ -93,6 +94,7 @@ a{
             color: rgba(255, 255, 255, 0.50);
         }
         &-file{
+            width: 100%;
             font-size: 20px;
             font-family: "Onest-Thin";
             margin-bottom: 20px;
@@ -148,15 +150,6 @@ a{
         }
     }
 }
-input #file-upload-button {
-    background: transparent;
-    color: #fff;
-    padding: 8px 24px;
-    border-radius: 40px;
-    border: 1px solid #FFF;
-    font-size: 22px;
-    font-family: "Onest-Thin";
-}
 .header{
     font-size: 20px;
     margin-bottom: 155px;
@@ -165,7 +158,12 @@ input #file-upload-button {
         justify-content: space-between;
         align-items: center;
     }
-    &__logo{}
+    &__logo{
+        margin-right: 10px;
+        img{
+            max-width: 100%;
+        }
+    }
     &__menu{
         &-list{}
         &-li{
@@ -212,6 +210,9 @@ input #file-upload-button {
             background-image: url(../images/place.png);
         }
     }
+    &__burger{
+        display: none;
+    }
 }
 
 .about{
@@ -243,8 +244,24 @@ input #file-upload-button {
             width: 30px;
             height: 40px;
             background-repeat: no-repeat;
+            background-size: contain;
             background-image: url(../images/list-check.svg);
         }
+    }
+}
+
+.partners{
+    margin-bottom: 90px;
+    &__inner{}
+    &__links{}
+    &__link{
+        padding: 8px 24px;
+        border-radius: 40px;
+        border: 1px solid #FFF;
+        font-size: 26px;
+        font-family: "Onest-Regular";
+        margin-right: 30px;
+        margin-bottom: 30px;
     }
 }
 
@@ -258,7 +275,7 @@ input #file-upload-button {
     &__items{}
     &__item{
         display: flex;
-        align-items: center;
+        // align-items: center;
         &:first-child{
             margin-bottom: 60px;
         }
@@ -312,6 +329,7 @@ input #file-upload-button {
         border: 1px solid #FFF;
         font-size: 26px;
         margin-right: 40px;
+        margin-bottom: 30px;
         &:last-child{
             margin-right: 0;
         }
@@ -333,6 +351,7 @@ input #file-upload-button {
         height: 420px;
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: center center;
     }
 }
 
@@ -343,7 +362,7 @@ input #file-upload-button {
         justify-content: space-between;
     }
     &__map{
-        margin-right: 100px;
+        margin-right: 20px;
         width: 70%;
         .ymaps-layers-pane {
             filter: grayscale(1);
@@ -386,7 +405,10 @@ input #file-upload-button {
         background-repeat: no-repeat;
         background-size: contain;
     }
-    &__inner{}
+    &__inner{
+        position: relative;
+        z-index: 2;
+    }
     &__menu{
         display: flex;
         justify-content: space-between;
@@ -423,4 +445,5 @@ input #file-upload-button {
     position: fixed;
     right: 50px;
     bottom: 140px;
+    z-index: 3;
 }

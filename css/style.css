@@ -122,17 +122,13 @@ a {
   font-family: "Onest-Thin";
   color: rgba(255, 255, 255, 0.5);
 }
-.top__form-input:-ms-input-placeholder {
-  font-size: 24px;
-  font-family: "Onest-Thin";
-  color: rgba(255, 255, 255, 0.5);
-}
 .top__form-input::placeholder {
   font-size: 24px;
   font-family: "Onest-Thin";
   color: rgba(255, 255, 255, 0.5);
 }
 .top__form-file {
+  width: 100%;
   font-size: 20px;
   font-family: "Onest-Thin";
   margin-bottom: 20px;
@@ -189,16 +185,6 @@ a {
   outline: none;
 }
 
-input #file-upload-button {
-  background: transparent;
-  color: #fff;
-  padding: 8px 24px;
-  border-radius: 40px;
-  border: 1px solid #FFF;
-  font-size: 22px;
-  font-family: "Onest-Thin";
-}
-
 .header {
   font-size: 20px;
   margin-bottom: 155px;
@@ -207,6 +193,12 @@ input #file-upload-button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.header__logo {
+  margin-right: 10px;
+}
+.header__logo img {
+  max-width: 100%;
 }
 .header__menu-li {
   display: inline-block;
@@ -244,6 +236,9 @@ input #file-upload-button {
 .header__contacts-p._place::before {
   background-image: url(../images/place.png);
 }
+.header__burger {
+  display: none;
+}
 
 .about {
   padding: 70px 0 100px;
@@ -274,7 +269,21 @@ input #file-upload-button {
   width: 30px;
   height: 40px;
   background-repeat: no-repeat;
+  background-size: contain;
   background-image: url(../images/list-check.svg);
+}
+
+.partners {
+  margin-bottom: 90px;
+}
+.partners__link {
+  padding: 8px 24px;
+  border-radius: 40px;
+  border: 1px solid #FFF;
+  font-size: 26px;
+  font-family: "Onest-Regular";
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .products {
@@ -286,7 +295,6 @@ input #file-upload-button {
 }
 .products__item {
   display: flex;
-  align-items: center;
 }
 .products__item:first-child {
   margin-bottom: 60px;
@@ -339,6 +347,7 @@ input #file-upload-button {
   border: 1px solid #FFF;
   font-size: 26px;
   margin-right: 40px;
+  margin-bottom: 30px;
 }
 .production__link:last-child {
   margin-right: 0;
@@ -360,6 +369,7 @@ input #file-upload-button {
   height: 420px;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .map {
@@ -370,7 +380,7 @@ input #file-upload-button {
   justify-content: space-between;
 }
 .map__map {
-  margin-right: 100px;
+  margin-right: 20px;
   width: 70%;
 }
 .map__map .ymaps-layers-pane {
@@ -413,6 +423,10 @@ input #file-upload-button {
   background-repeat: no-repeat;
   background-size: contain;
 }
+.footer__inner {
+  position: relative;
+  z-index: 2;
+}
 .footer__menu {
   display: flex;
   justify-content: space-between;
@@ -448,4 +462,5 @@ input #file-upload-button {
   position: fixed;
   right: 50px;
   bottom: 140px;
+  z-index: 3;
 }
