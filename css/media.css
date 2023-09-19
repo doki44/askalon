@@ -6,19 +6,27 @@
   .header__menu-li:hover {
     border-bottom: 1px solid #fff;
   }
+  .top-btn {
+    display: block;
+  }
 }
 @media (max-width: 1400px) {
   .map__inner {
-    display: block;
+    flex-direction: column-reverse;
   }
   .map__map {
     width: 100%;
+    margin-right: 0;
   }
   .map__contacts {
     width: 100%;
+    margin-bottom: 20px;
   }
   .map__contacts-p {
     margin-bottom: 20px;
+    font-size: 17px;
+  }
+  .map__contacts-anchor {
     font-size: 17px;
   }
 }
@@ -175,6 +183,11 @@
   }
   .gallery__item {
     max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .top-btn {
+    display: none;
   }
 }
 @media (max-width: 650px) {
