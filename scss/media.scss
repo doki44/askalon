@@ -255,6 +255,9 @@
         margin-right: 0;
         justify-content: center;
     }
+    .footer::before{
+        display: none;
+    }
     .footer__menu{
         flex-direction: column;
     }
